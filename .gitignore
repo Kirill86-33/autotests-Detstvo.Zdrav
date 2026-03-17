@@ -1,18 +1,18 @@
+gitignore
 # Виртуальное окружение
 .venv/
 venv/
 ENV/
 env/
 
-# Файлы с секретами
+# Файлы с секретами (уже должны быть в .gitignore)
 set_env.ps1
 connection_config.ini
 *.ini
 
-# Кэш Python
+# Кэш Python и временные файлы
 __pycache__/
 *.pyc
 .pytest_cache/
-
-# VS Code
-.vscode/
+*.log
+build/
