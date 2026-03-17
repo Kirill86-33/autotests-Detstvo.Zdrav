@@ -1,5 +1,8 @@
+from testit_python_commons.decorators import externalId, displayName
 class TestFirstPage:
     
+    @externalId("test_first_aid")
+    @displayName("Раздел Первая помощь")
     def test_first_aid (self, card_first_aid):  # Фикстура автоматически передаст login_page
         card_first_aid.open()
         card_first_aid.click_cart_first()

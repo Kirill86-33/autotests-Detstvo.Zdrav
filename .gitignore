@@ -1,11 +1,18 @@
-# Virtual environment
+# Виртуальное окружение
 .venv/
 venv/
+ENV/
+env/
 
-# Python cache
+# Файлы с секретами
+set_env.ps1
+connection_config.ini
+*.ini
+
+# Кэш Python
 __pycache__/
 *.pyc
+.pytest_cache/
 
-# IDE
+# VS Code
 .vscode/
-.idea/

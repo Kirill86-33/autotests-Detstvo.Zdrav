@@ -1,5 +1,8 @@
+from testit_python_commons.decorators import externalId, displayName
 class TestChildrenPage:
     
+    @externalId("test_children")
+    @displayName("Раздел Здоровье детей")
     def test_children (self, card_children_health):  # Фикстура автоматически передаст login_page
         card_children_health.open()
         card_children_health.click_cart_children()
