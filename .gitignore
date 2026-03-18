@@ -1,18 +1,26 @@
-gitignore
-# Виртуальное окружение
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
 .venv/
 venv/
 ENV/
 env/
 
-# Файлы с секретами (уже должны быть в .gitignore)
-set_env.ps1
-connection_config.ini
-*.ini
-
-# Кэш Python и временные файлы
-__pycache__/
-*.pyc
+# Pytest
 .pytest_cache/
-*.log
-build/__pycache__/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# Local configuration with secrets (if any)
+set_env.ps1
